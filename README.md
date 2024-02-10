@@ -1,1 +1,1 @@
-# LSC_python2_hetfo
+# LSC Python2 hétfői csoport
