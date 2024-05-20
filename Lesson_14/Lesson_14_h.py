@@ -55,13 +55,16 @@ def takaritas():
 # takaritas()
 
 def olimpia():
-    csv = pd.read_csv("Lesson_14/olympics.csv")
+    csv = pd.read_csv("Lesson_14/olympics.csv", header=1)
     print(csv.head(10))
     csv.rename(columns={
         'Unnamed: 0': 'Országok',
         '? Summer': 'Nyári olimpia',
         '? Winter': 'Téli olimpia',
-        '? Games': 'Sportágak száma'
+        '? Games': 'Sportágak száma', 
+        '01 !': 'Ny_arany', 
+        '01 !.1': 'T_arany',
+        '01 !.2': 'S_arany'
     }, inplace=True)
     print(csv.head(10))
 
